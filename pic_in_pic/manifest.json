@@ -1,0 +1,30 @@
+{
+  "name": "Picture-in-Picture",
+  "description": "Watch video using Picture-in-Picture",
+  "version": "1.0.1",
+  "icons": {},
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+P",
+        "mac": "Alt+P",
+        "chromeos": "Alt+P",
+        "linux": "Alt+P"
+      }
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": ["storage", "tabs", "<all_urls>"],
+  "minimum_chrome_version": "69.0.3483.0",
+  "manifest_version": 2
+}
